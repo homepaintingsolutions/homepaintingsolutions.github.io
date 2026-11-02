@@ -1,116 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Google Ads Tag -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18533428443"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-18533428443');
-</script>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Painting Solution | Professional Painting Services</title>
-<meta name="description" content="Professional home painting, PU polish, waterproofing and wood coating services in Faridabad and Delhi NCR.">
+<meta name="description" content="Professional home painting, interior painting, exterior painting and waterproofing services. Choose from leading paint brands.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;color:#202b3c;background:#fff;line-height:1.6}
-header{background:#10243e;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:23px;font-weight:bold;color:#f6bd55}
-nav a{color:white;text-decoration:none;margin:0 10px;font-size:14px}
-.hero{padding:90px 8%;background:linear-gradient(90deg,rgba(9,26,48,.92),rgba(9,26,48,.45)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600') center/cover;color:white}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#172b46;line-height:1.6}
+header{
+background:#10243e;color:white;padding:18px 6%;
+display:flex;justify-content:space-between;align-items:center;
+flex-wrap:wrap;gap:15px
+}
+.logo{font-size:22px;font-weight:bold}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+.hero{
+background:linear-gradient(90deg,#10243ee8,#10243e80),
+url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600');
+background-size:cover;background-position:center;
+padding:110px 7%;color:white
+}
 .hero h1{font-size:43px;max-width:650px;line-height:1.2}
 .hero p{font-size:18px;margin:20px 0;max-width:550px}
-.btn{display:inline-block;background:#e9a936;color:#14243a;padding:13px 24px;border-radius:5px;text-decoration:none;font-weight:bold;margin:8px 5px 0 0}
-.btn2{background:white;color:#14243a}
-section{padding:65px 8%}
-.heading{text-align:center;margin-bottom:35px}
-.heading h2{font-size:30px;color:#142c49}
-.heading p{color:#687386}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{padding:25px;background:#f5f7fa;border-radius:10px;border:1px solid #e5e9ef}
-.card h3{color:#173657;margin-bottom:10px}
-.card p{color:#647084;font-size:14px}
-.icon{font-size:32px;margin-bottom:12px}
+.btn{
+display:inline-block;background:#efa936;color:#10243e;
+padding:13px 25px;border-radius:6px;
+text-decoration:none;font-weight:bold;margin:5px
+}
+section{padding:70px 6%}
+.heading{text-align:center;margin-bottom:40px}
+.heading h2{font-size:34px}
+.heading p{color:#718096;margin-top:10px}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px
+}
+.card{
+padding:25px;background:#f5f7fa;
+border-radius:12px;border:1px solid #e5e9ef
+}
+.card h3{margin-bottom:10px;color:#173657}
+.card p{color:#647084}
 .dark{background:#10243e;color:white}
-.dark .heading h2,.dark .card h3{color:white}
-.dark .card{background:#1c3552;border:0}
-.dark .card p{color:#d4deeb}
-.brands{display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
-.brand{padding:17px 24px;border:1px solid #ddd;border-radius:8px;font-size:18px;font-weight:bold;background:#fff}
-.banner{background:#f4b84d;text-align:center;padding:45px 8%}
-.banner h2{font-size:29px;color:#14243a}
-footer{background:#0b192b;color:white;text-align:center;padding:35px 15px}
-footer p{margin:8px}
-.small{font-size:12px;color:#aab6c5}
-@media(max-width:650px){
-header{gap:12px}
-nav{width:100%;display:flex;flex-wrap:wrap;gap:10px}
-nav a{margin:0}
-.hero{padding:65px 7%}
+.dark .heading h2{color:white}
+.dark .heading p{color:#c5d0df}
+
+/* BRAND SECTION */
+.brands{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:20px;
+max-width:850px;
+margin:auto
+}
+.brand{
+background:white;
+border-radius:16px;
+min-height:175px;
+padding:22px 12px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:12px;
+text-align:center;
+box-shadow:0 4px 18px #0002
+}
+.brand img{
+width:95px;
+height:75px;
+object-fit:contain;
+display:block
+}
+.brand strong{
+font-size:19px;
+color:#10243e
+}
+.disclaimer{
+text-align:center;
+color:#c5d0df;
+margin:35px auto 0;
+max-width:700px
+}
+.contact{
+background:#f5f7fa;text-align:center
+}
+footer{
+background:#10243e;color:white;
+text-align:center;padding:25px
+}
+@media(max-width:600px){
+header{justify-content:center;text-align:center}
+nav{justify-content:center;gap:13px}
+.logo{width:100%}
+.hero{padding:75px 7%}
 .hero h1{font-size:34px}
-section{padding:48px 6%}
-}
-.brands {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 18px !important;
-  margin: 30px auto !important;
-}
-
-.brands .brand {
-  background: white !important;
-  color: #10243e !important;
-  -webkit-text-fill-color: #10243e !important;
-  font-size: 20px !important;
-  font-weight: bold !important;
-  text-align: center !important;
-  padding: 28px 10px !important;
-  border-radius: 14px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 100px !important;
-}.brands {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 14px !important;
-  width: 100% !important;
-}
-
-.brands .brand {
-  width: 100% !important;
-  min-height: 145px !important;
-  height: 145px !important;
-  padding: 15px !important;
-  box-sizing: border-box !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 12px !important;
-  background: white !important;
-  border-radius: 14px !important;
-  color: #10243e !important;
-  font-size: 17px !important;
-}
-
-.brands .brand img {
-  width: 65px !important;
-  height: 55px !important;
-  object-fit: contain !important;
-  display: block !important;
-}
-
-.brands .brand span {
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  color: #10243e !important;
-  text-align: center !important;
+section{padding:55px 6%}
+.heading h2{font-size:29px}
+.brands{gap:13px}
+.brand{min-height:145px;padding:15px 8px}
+.brand img{width:75px;height:65px}
+.brand strong{font-size:16px}
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -119,105 +117,127 @@ section{padding:48px 6%}
 <a href="#home">Home</a>
 <a href="#services">Services</a>
 <a href="#brands">Brands</a>
+<a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <div class="hero" id="home">
 <h1>Transform Your Home With Beautiful Colours</h1>
-<p>Professional Home Painting, Waterproofing, PU Polish & Wood Coating Solutions.</p>
-<p>आपके सपनों के घर के लिए बेहतरीन पेंटिंग और फिनिशिंग सेवाएं।</p>
-<a class="btn" href="https://wa.me/919319063052">Get Free Consultation</a>
-<a class="btn btn2" href="#services">Explore Services</a>
+<p>Professional Interior, Exterior Painting & Waterproofing Solutions.</p>
+<a href="#contact" class="btn">Get Free Consultation</a>
+<a href="#services" class="btn">Our Services</a>
 </div>
 
 <section id="services">
 <div class="heading">
-<h2>Our Professional Services</h2>
-<p>Complete painting and home improvement solutions.</p>
+<h2>Our Painting Services</h2>
+<p>Complete painting solutions for your home and office.</p>
 </div>
 <div class="grid">
-<div class="card"><div class="icon">🏠</div><h3>Interior Painting</h3><p>Beautiful wall finishes, premium emulsions and elegant colours for your home.</p></div>
-<div class="card"><div class="icon">🏡</div><h3>Exterior Painting</h3><p>Weather-resistant exterior painting to protect and beautify your property.</p></div>
-<div class="card"><div class="icon">✨</div><h3>PU Polish</h3><p>Premium glossy and matt PU polish for furniture and wooden surfaces.</p></div>
-<div class="card"><div class="icon">🪵</div><h3>Wood Coating</h3><p>Professional wood finishing, polishing and protective coatings.</p></div>
-<div class="card"><div class="icon">💧</div><h3>Roof Waterproofing</h3><p>Complete roof waterproofing solutions with a proposed warranty of up to 10 years, subject to product, system and written terms.</p></div>
-<div class="card"><div class="icon">🧱</div><h3>Wall Putty & Repair</h3><p>Surface preparation, wall putty, crack repair and smooth finishing.</p></div>
+<div class="card">
+<h3>Interior Painting</h3>
+<p>Beautiful wall finishes and premium interior painting.</p>
+</div>
+<div class="card">
+<h3>Exterior Painting</h3>
+<p>Weather-resistant exterior painting solutions.</p>
+</div>
+<div class="card">
+<h3>Roof Waterproofing</h3>
+<p>Roof waterproofing solutions with warranties subject to product system and written terms.</p>
+</div>
+<div class="card">
+<h3>Wall Putty & Repair</h3>
+<p>Surface preparation, crack repair and smooth finishing.</p>
+</div>
+<div class="card">
+<h3>Wood Polish</h3>
+<p>Professional wood polishing and finishing solutions.</p>
+</div>
+<div class="card">
+<h3>Texture & Designer Paint</h3>
+<p>Modern decorative wall finishes for your home.</p>
+</div>
 </div>
 </section>
-
 
 <section class="dark" id="brands">
-
 <div class="heading">
 <h2>Our Trusted Paint Brands</h2>
-<p>Choose from India's leading paint brands</p>
+<p>Choose from India's leading paint brands.</p>
 </div>
 
-<div style="
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:18px;
-max-width:600px;
-margin:35px auto;
-">
+<div class="brands">
 
-<div style="background:white;border-radius:15px;padding:25px 10px;text-align:center;min-height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-<img src="https://www.google.com/s2/favicons?domain=asianpaints.com&sz=256" style="width:55px;height:55px;object-fit:contain;" alt="Asian Paints">
-<strong style="color:#10243e;font-size:17px;">Asian Paints</strong>
+<div class="brand">
+<img src="https://www.google.com/s2/favicons?domain=asianpaints.com&sz=256" alt="Asian Paints Logo">
+<strong>Asian Paints</strong>
 </div>
 
-<div style="background:white;border-radius:15px;padding:25px 10px;text-align:center;min-height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-<img src="https://www.google.com/s2/favicons?domain=bergerpaints.com&sz=256" style="width:55px;height:55px;object-fit:contain;" alt="Berger Paints">
-<strong style="color:#10243e;font-size:17px;">Berger Paints</strong>
+<div class="brand">
+<img src="https://www.google.com/s2/favicons?domain=bergerpaints.com&sz=256" alt="Berger Paints Logo">
+<strong>Berger Paints</strong>
 </div>
 
-<div style="background:white;border-radius:15px;padding:25px 10px;text-align:center;min-height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-<img src="https://www.google.com/s2/favicons?domain=nerolac.com&sz=256" style="width:55px;height:55px;object-fit:contain;" alt="Nerolac Paints">
-<strong style="color:#10243e;font-size:17px;">Nerolac Paints</strong>
+<div class="brand">
+<img src="https://www.google.com/s2/favicons?domain=nerolac.com&sz=256" alt="Nerolac Logo">
+<strong>Nerolac Paints</strong>
 </div>
 
-<div style="background:white;border-radius:15px;padding:25px 10px;text-align:center;min-height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;">
-<img src="https://www.google.com/s2/favicons?domain=birlaopus.com&sz=256" style="width:55px;height:55px;object-fit:contain;" alt="Birla Opus">
-<strong style="color:#10243e;font-size:17px;">Birla Opus</strong>
+<div class="brand">
+<img src="https://www.google.com/s2/favicons?domain=birlaopus.com&sz=256" alt="Birla Opus Logo">
+<strong>Birla Opus</strong>
 </div>
 
 </div>
 
-<p style="text-align:center;font-size:13px;color:#c5d0df;">
+<p class="disclaimer">
 All brand names and logos belong to their respective owners.
-Home Painting Solution is an independent service provider.
+Home Painting Solution is an independent service provider
+and does not imply official brand affiliation.
 </p>
-
 </section>
 
-<section>
+<section id="about">
 <div class="heading">
 <h2>Why Choose Home Painting Solution?</h2>
 <p>Quality workmanship and customer-focused service.</p>
 </div>
 <div class="grid">
-<div class="card"><h3>✓ Skilled Professionals</h3><p>Experienced painting and polishing teams.</p></div>
-<div class="card"><h3>✓ Quality Materials</h3><p>Product options from leading paint brands.</p></div>
-<div class="card"><h3>✓ Budget Friendly</h3><p>Solutions designed around your budget.</p></div>
-<div class="card"><h3>✓ Customer Support</h3><p>Assistance before, during and after the project.</p></div>
+<div class="card">
+<h3>✓ Skilled Professionals</h3>
+<p>Experienced painting and polishing teams.</p>
+</div>
+<div class="card">
+<h3>✓ Quality Materials</h3>
+<p>Product options from leading paint brands.</p>
+</div>
+<div class="card">
+<h3>✓ Budget Friendly</h3>
+<p>Solutions designed around your budget.</p>
+</div>
+<div class="card">
+<h3>✓ Customer Support</h3>
+<p>Assistance before, during and after the project.</p>
+</div>
 </div>
 </section>
 
-<div class="banner" id="contact">
-<h2>Give Your Home a Beautiful New Look!</h2>
-<p>Get in touch today for a painting consultation.</p>
-<a class="btn" href="https://wa.me/919319063052?text=Hello%20Home%20Painting%20Solution%2C%20I%20need%20a%20painting%20quotation.">WhatsApp: 9319063052</a>
+<section class="contact" id="contact">
+<div class="heading">
+<h2>Let's Paint Your Dream Home!</h2>
+<p>Contact us today for a painting consultation.</p>
 </div>
+<a class="btn" href="https://wa.me/919319063052">
+Chat on WhatsApp
+</a>
+</section>
 
 <footer>
-<h2 style="color:#f6bd55">HOME PAINTING SOLUTION</h2>
-<p>Professional Painting | PU Polish | Waterproofing | Wood Coating</p>
-<p>Serving Faridabad & Delhi NCR</p>
-<p>Call / WhatsApp: 9319063052</p>
-<p class="small">© 2026 Home Painting Solution. All Rights Reserved.</p>
+<p>© 2026 Home Painting Solution. All Rights Reserved.</p>
+<p>Professional Home Painting Services</p>
 </footer>
 
 </body>
-  </html>
-  
+</html>
