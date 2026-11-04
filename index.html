@@ -30,5 +30,164 @@ section{padding:88px 7%}.section-kicker{text-align:center;color:#ad7a25;font-siz
 <section id="about"><div class="about-inner"><div class="about-copy"><div class="section-kicker" style="text-align:left">Why choose us</div><h2>Beautiful Finishes.<br>Professional Care.</h2><p>We help you plan your painting project with suitable product options, experienced workmanship and customer support throughout the process.</p><a class="btn btn-gold" href="#contact">Talk to Our Team</a></div><div class="about-points"><div class="point">✓ Skilled Professionals</div><div class="point">✓ Quality Materials</div><div class="point">✓ Clear Quotations</div><div class="point">✓ Customer Support</div></div></div></section>
 <section class="contact" id="contact"><div class="section-kicker">Let's get started</div><h2 class="section-title">Ready to Refresh Your Home?</h2><p class="section-sub">Book a consultation for painting, waterproofing, texture or wallpaper work in Faridabad.</p><a class="btn btn-gold" href="https://wa.me/919319063052?text=Hello%2C%20I%20need%20a%20home%20painting%20consultation.">Chat on WhatsApp</a></section>
 </main><footer><p>© 2026 Home Painting Solution. All Rights Reserved.</p><p>Professional Home Painting & Waterproofing Services · Faridabad</p></footer><a class="whatsapp" href="https://wa.me/919319063052?text=Hello%2C%20I%20need%20a%20painting%20consultation." aria-label="Chat on WhatsApp">WhatsApp ↗</a>
-<script>const menuBtn=document.getElementById('menuBtn');const navPanel=document.getElementById('navPanel');menuBtn.addEventListener('click',()=>{const open=navPanel.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});navPanel.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navPanel.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));</script>
+<script>const menuBtn=document.getElementById('menuBtn');const navPanel=document.getElementById('navPanel');menuBtn.addEventListener('click',()=>{const open=navPanel.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});navPanel.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navPanel.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));</script><style>
+.hps-form-section {
+  background: #101820;
+  padding: 55px 20px;
+  color: #fff;
+}
+.hps-form-box {
+  max-width: 650px;
+  margin: auto;
+  background: #192631;
+  border: 1px solid #e6b45b;
+  border-radius: 16px;
+  padding: 25px;
+}
+.hps-form-box h2 {
+  color: #e6b45b;
+  text-align: center;
+}
+.hps-form-box p {
+  text-align: center;
+  color: #d4dce2;
+}
+.hps-form-box label {
+  display: block;
+  margin: 13px 0 6px;
+}
+.hps-form-box input,
+.hps-form-box select,
+.hps-form-box textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #52616b;
+  border-radius: 8px;
+  background: white;
+  color: #17212b;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.hps-form-box button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 15px;
+  border: 0;
+  border-radius: 8px;
+  background: #e6b45b;
+  color: #101820;
+  font-size: 17px;
+  font-weight: bold;
+}
+</style>
+
+<section class="hps-form-section" id="customer-registration">
+<div class="hps-form-box">
+
+<h2>Home Painting – Free Consultation</h2>
+<p>Book your professional painting consultation today.</p>
+
+<form id="hpsCustomerForm">
+
+<label>Customer Name *</label>
+<input name="name" required placeholder="Full Name">
+
+<label>Mobile Number *</label>
+<input name="phone" type="tel"
+pattern="[6-9][0-9]{9}" maxlength="10"
+required placeholder="10-digit mobile number">
+
+<label>City *</label>
+<select name="city" required>
+<option value="">Select City</option>
+<option>Faridabad</option>
+<option>Delhi</option>
+<option>Gurugram</option>
+<option>Noida</option>
+</select>
+
+<label>Sector / Locality *</label>
+<input name="locality" required placeholder="Enter locality">
+
+<label>Full Property Address *</label>
+<textarea name="address" rows="3"
+required placeholder="Complete address"></textarea>
+
+<label>Property Type *</label>
+<select name="property" required>
+<option value="">Select Property</option>
+<option>1 BHK</option>
+<option>2 BHK</option>
+<option>3 BHK</option>
+<option>4 BHK</option>
+<option>Villa</option>
+<option>Independent House</option>
+<option>Commercial Property</option>
+</select>
+
+<label>Painting Service *</label>
+<select name="service" required>
+<option value="">Select Service</option>
+<option>Complete Home Painting</option>
+<option>Interior Painting</option>
+<option>Exterior Painting</option>
+<option>Waterproofing</option>
+<option>Texture & Designer Paint</option>
+<option>Roof Coating</option>
+<option>PU Polish</option>
+</select>
+
+<label>Site Visit Preference *</label>
+<select name="visit" required>
+<option value="">Select Preference</option>
+<option>Arrange a Site Visit</option>
+<option>Call Me First</option>
+</select>
+
+<label>Preferred Visit Date</label>
+<input name="date" type="date">
+
+<label>Preferred Time</label>
+<select name="time">
+<option value="">Select Time</option>
+<option>10 AM - 12 PM</option>
+<option>12 PM - 2 PM</option>
+<option>2 PM - 4 PM</option>
+<option>4 PM - 6 PM</option>
+</select>
+
+<button type="submit">Submit Enquiry on WhatsApp</button>
+
+</form>
+</div>
+</section>
+
+<script>
+document.getElementById("hpsCustomerForm")
+.addEventListener("submit", function(e) {
+
+e.preventDefault();
+
+const f = new FormData(this);
+
+const message =
+"NEW CUSTOMER ENQUIRY - HOME PAINTING SOLUTION\n\n" +
+"Name: " + f.get("name") + "\n" +
+"Mobile: " + f.get("phone") + "\n" +
+"City: " + f.get("city") + "\n" +
+"Locality: " + f.get("locality") + "\n" +
+"Address: " + f.get("address") + "\n" +
+"Property: " + f.get("property") + "\n" +
+"Service: " + f.get("service") + "\n" +
+"Site Visit: " + f.get("visit") + "\n" +
+"Date: " + (f.get("date") || "Not specified") + "\n" +
+"Time: " + (f.get("time") || "Not specified");
+
+const url = "https://wa.me/919319063052?text=" +
+encodeURIComponent(message);
+
+window.open(url, "_blank");
+
+});
+</script>
 </body></html>
