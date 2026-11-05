@@ -33,57 +33,6 @@ section{padding:88px 7%}.section-kicker{text-align:center;color:#ad7a25;font-siz
 .registration-success{display:none;background:#f2f8f3;border:1px solid #b9d9c0;color:#245b32;padding:16px;border-radius:8px;margin-top:16px;text-align:center}
 @media(max-width:560px){.registration-form{grid-template-columns:1fr}.registration-field.full,.registration-form .register-submit{grid-column:1}}
 
-
-/* Registration popup */
-.hps-modal{display:none;position:fixed;inset:0;z-index:9999;background:rgba(5,12,18,.78);padding:18px;align-items:center;justify-content:center}
-.hps-modal.show{display:flex}
-.hps-modal-card{position:relative;width:min(100%,460px);max-height:92svh;overflow:auto;background:#fff;border-radius:16px;padding:28px 22px;box-shadow:0 22px 70px #0006}
-.hps-modal-close{position:absolute;right:12px;top:10px;width:36px;height:36px;border:0;border-radius:50%;background:#eef1f3;color:#17212b;font-size:24px;cursor:pointer}
-.hps-modal-kicker{color:#ad7a25;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-.hps-modal-card h2{font-size:27px;line-height:1.15;margin:7px 35px 8px 0;color:#17212b}
-.hps-modal-card p{font-size:13px;color:#68737c;margin-bottom:17px}
-.hps-modal-form{display:grid;gap:11px}
-.hps-modal-form input,.hps-modal-form select{width:100%;padding:13px;border:1px solid #d9dfe3;border-radius:8px;font:inherit;font-size:14px;background:#fff;color:#17212b}
-.hps-modal-form button{width:100%;border:0;cursor:pointer}
-.hps-modal-small{text-align:center;font-size:11px;color:#78828a;margin:12px 0 0!important}
-@media(max-width:480px){.hps-modal-card{padding:25px 18px}.hps-modal-card h2{font-size:24px}}
-
-
-/* Premium black & gold theme */
-:root{--gold:#e6b45b;--ink:#050607;--surface:#101214;--surface2:#171a1d;--line:#303438;--muted:#b3bac0}
-html,body{background:#050607!important;color:#f4f5f6!important}
-body{color:#f4f5f6!important}
-section:not(.hero){background:#080a0c!important;color:#f4f5f6!important}
-section#videos,.video-section{background:#050607!important}
-.section-title,.about-copy h2{color:#f7f7f7!important}
-.section-sub,.about-copy p{color:#b8c0c6!important}
-.section-kicker{color:var(--gold)!important}
-.services-grid .service,.service{background:#111416!important;border:1px solid #303438!important;color:#f4f5f6!important}
-.service h3,.service p{color:#f4f5f6!important}
-.service p{color:#b8c0c6!important}
-.brand-section{background:#090b0d!important}
-.brand{background:#111416!important;border:1px solid #34383c!important;color:#fff!important}
-.brand strong{color:#fff!important}
-.brand-logo{background:#fff!important}
-.point{background:#15191c!important;color:#f4f5f6!important;border:1px solid #303438}
-.registration-section{background:#080a0c!important}
-.registration-wrap{background:#111416!important;border:1px solid #34383c!important;box-shadow:0 12px 35px #0008!important}
-.registration-field label{color:#f1f3f4!important}
-.registration-field input,.registration-field select,.registration-field textarea,.hps-modal-form input,.hps-modal-form select{background:#080a0c!important;color:#f4f5f6!important;border:1px solid #42484d!important;color-scheme:dark}
-.registration-field input::placeholder,.registration-field textarea::placeholder,.hps-modal-form input::placeholder{color:#89939b!important}
-.registration-note{color:#aeb7bd!important}
-.registration-success{background:#102016!important;border-color:#315b3b!important;color:#bce8c6!important}
-.contact{background:#111820!important}
-footer{background:#020303!important;color:#aeb7bd!important;border-top:1px solid #252a2e}
-.nav-panel{background:#080a0cf5!important;border-color:#454b50!important}
-.hps-modal{background:rgba(0,0,0,.86)!important}
-.hps-modal-card{background:#111416!important;color:#f4f5f6!important;border:1px solid #3b4146!important}
-.hps-modal-card h2{color:#fff!important}
-.hps-modal-card p,.hps-modal-small{color:#b8c0c6!important}
-.hps-modal-close{background:#252b30!important;color:#fff!important}
-.btn-gold{background:var(--gold)!important;color:#090b0d!important}
-.video-card{border:1px solid #303438}
-
 </style>
 </head>
 <body>
@@ -120,25 +69,6 @@ footer{background:#020303!important;color:#aeb7bd!important;border-top:1px solid
 
 <section class="contact" id="contact"><div class="section-kicker">Let's get started</div><h2 class="section-title">Ready to Refresh Your Home?</h2><p class="section-sub">Book a consultation for painting, waterproofing, texture or wallpaper work in Faridabad.</p><a class="btn btn-gold" href="https://wa.me/919319063052?text=Hello%2C%20I%20need%20a%20home%20painting%20consultation.">Chat on WhatsApp</a></section>
 </main><footer><p>© 2026 Home Painting Solution. All Rights Reserved.</p><p>Professional Home Painting & Waterproofing Services · Faridabad</p></footer><a class="whatsapp" href="https://wa.me/919319063052?text=Hello%2C%20I%20need%20a%20painting%20consultation." aria-label="Chat on WhatsApp">WhatsApp ↗</a>
-
-<!-- Quick customer registration popup -->
-<div class="hps-modal" id="hpsLeadPopup" role="dialog" aria-modal="true" aria-labelledby="hpsPopupTitle">
-  <div class="hps-modal-card">
-    <button class="hps-modal-close" id="hpsPopupClose" type="button" aria-label="Close popup">&times;</button>
-    <div class="hps-modal-kicker">Home Painting Solution</div>
-    <h2 id="hpsPopupTitle">Get a Free Painting Consultation</h2>
-    <p>Share your details. Our team will connect with you to discuss your painting requirements.</p>
-    <form class="hps-modal-form" id="hpsPopupForm">
-      <input name="name" type="text" autocomplete="name" placeholder="Your full name" required>
-      <input name="phone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel" placeholder="10-digit mobile number" required>
-      <select name="city" required><option value="">Select your city</option><option>Faridabad</option><option>Delhi</option><option>Gurugram</option><option>Noida</option></select>
-      <select name="service" required><option value="">Select painting service</option><option>Complete Home Painting</option><option>Interior Painting</option><option>Exterior Painting</option><option>Waterproofing</option><option>Texture & Designer Paint</option><option>PU Polish</option></select>
-      <button class="btn btn-gold" type="submit">Submit Enquiry on WhatsApp</button>
-    </form>
-    <p class="hps-modal-small">Your details are used only to respond to your enquiry.</p>
-  </div>
-</div>
-
 <script>const menuBtn=document.getElementById('menuBtn');const navPanel=document.getElementById('navPanel');menuBtn.addEventListener('click',()=>{const open=navPanel.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});navPanel.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navPanel.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));</script>
 
 <script>
@@ -148,6 +78,13 @@ footer{background:#020303!important;color:#aeb7bd!important;border-top:1px solid
   form.addEventListener('submit',function(e){
     e.preventDefault();
     if(!form.reportValidity()) return;
+
+    // Google Ads Contact (1): count a valid registration form submission.
+    // The base Google tag is already installed in the <head>.
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18533428443/8eOZCMzH0a8dENvZtoVF'
+    });
+
     const d=new FormData(form);
     const msg=[
       'NEW CUSTOMER ENQUIRY - HOME PAINTING SOLUTION',
@@ -166,32 +103,6 @@ footer{background:#020303!important;color:#aeb7bd!important;border-top:1px solid
     const wa='https://wa.me/919319063052?text='+encodeURIComponent(msg);
     window.open(wa,'_blank','noopener');
     document.getElementById('hpsRegistrationNotice').scrollIntoView({behavior:'smooth',block:'center'});
-  });
-})();
-</script>
-
-
-<script>
-(function(){
-  const popup=document.getElementById('hpsLeadPopup');
-  const close=document.getElementById('hpsPopupClose');
-  const form=document.getElementById('hpsPopupForm');
-  if(!popup||!close||!form) return;
-  function closePopup(){popup.classList.remove('show');}
-  close.addEventListener('click',closePopup);
-  popup.addEventListener('click',function(e){if(e.target===popup) closePopup();});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape') closePopup();});
-  if(!sessionStorage.getItem('hpsPopupSeen')){
-    setTimeout(function(){popup.classList.add('show');sessionStorage.setItem('hpsPopupSeen','1');},4500);
-  }
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(!form.reportValidity()) return;
-    const d=new FormData(form);
-    const message=['NEW CUSTOMER ENQUIRY - HOME PAINTING SOLUTION','Name: '+d.get('name'),'Mobile: '+d.get('phone'),'City: '+d.get('city'),'Service: '+d.get('service')].join('\n');
-    const url='https://wa.me/919319063052?text='+encodeURIComponent(message);
-    window.open(url,'_blank','noopener');
-    closePopup();
   });
 })();
 </script>
